@@ -2,7 +2,9 @@
 title: "Imputation Methods for Prediction"
 author: "Paul Harmon"
 date: "January 5, 2018"
-output: beamer_presentation
+output: 
+  beamer_presentation:
+    theme: "AnnArbor"
 ---
 
 ```{r setup, include=FALSE}
@@ -32,10 +34,27 @@ _Example: Banner information for a subset of students were mis-entered or certai
 
 ## Handling Missing Data
 
-## The 
 
 # Methods
 
+## Complete Case Analysis
+The idea here is to simply ignore observations if they have missing data. In R, this is the default method used. If you only have a few missing observations and you have a lot of data, this may be reasonable. 
+
+In cases where data are MCAR, Complete Case analysis provides unbiased results (although it is a bit inefficient since you essentially throw away data). However, if the data are only MAR or are systematically missing, inferences tend to be biased. 
+
+##Imputation
+
+Imputation refers to the strategy of replacing missing values with a number. This may be as simple as adding the mean of the observed data or can involve more complicated methods. 
+
++ __Mean-based Imputation__: Replace all missing values the mean of the data that were observed. 
++ __Single Conditional Imputation__: Estimate the mean from a subgroup of the data (i.e. condition the imputed value on the known covariates). Single imputation generates just a single value.  
++ __Multiple Conditional Imputation__: Similar to Single Imputation, but rather than estimating just one value, you estimate a _distribution_ of values that the missing value could take. Research via simulation studies indicates that this method gives more appropriate standard errors than single imputation. 
+
+
+
+
+## Previous Research
+Methods for imputation have been compared often in the literature. 
 
 # Model
 
