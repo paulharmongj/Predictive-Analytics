@@ -1,0 +1,45 @@
+---
+title: "Imputation Methods for Prediction"
+author: "Paul Harmon"
+date: "January 5, 2018"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Introduction
+## Missing Data
+
+Most of the fields used in the predictive models we want to fit contain missing values. This can be a major issue for several reasons: 
+
++ For some fields,more data may be missing than are available
++ Some methods fail with missing data, limiting our options for analysis
++ Reproducibility: Even if data are available now, 
+
+## Types of Missing Data
+
+__Missing Completely at Random__: If this is the case, the missingness problem is somewhat mitigated. Usually, if the data are missing at random, we do not worry about missing important subsets of the population because we assume that at least some of those observations are occuring. ( _This is unlikely in practice_ )
+
+__Missing At Random__: A more reasonable assumption, we assume that the observation is not more likely to be missing after controlling for the other variables. In this case, we can use the other variables to predict the missing variable values given that we know other things about them. 
+
+_Example: Say we know low income students are less likely to report HS GPA values than high income students_.  
+
+__Systematic Missingness__: A more likely scenario, where data are more likely to be missing for some subpopulations than for others. In this case, ignoring the problem may lead to skewed inferences/results because we have missing information that is tied to some endogenous part of the process we are trying to predict. 
+
+_Example: Banner information for a subset of students were mis-entered or certain fields ignored by whoever added information in._
+
+## Handling Missing Data
+
+## The 
+
+# Methods
+
+
+# Model
+
+
+# Results
+
+# Discussion
