@@ -28,7 +28,7 @@ __Missing At Random__: A more reasonable assumption, we assume that the observat
 
 _Example: Say we know low income students are less likely to report HS GPA values than high income students_.  
 
-__Systematic Missingness__: A more likely scenario, where data are more likely to be missing for some subpopulations than for others. In this case, ignoring the problem may lead to skewed inferences/results because we have missing information that is tied to some endogenous part of the process we are trying to predict. 
+__Systematic Missingness__: A more likely scenario, where data are more likely to be missing for some subpopulations than for others. In this case, ignoring the problem may lead to skewed inferences/results because we have missing information that is tied to some endogenous part of the process we are trying to predict. _The key aspect of missingness not at random is that something 
 
 _Example: Banner information for a subset of students were mis-entered or certain fields ignored by whoever added information in._
 
@@ -51,10 +51,8 @@ Imputation refers to the strategy of replacing missing values with a number. Thi
 + __Multiple Conditional Imputation__: Similar to Single Imputation, but rather than estimating just one value, you estimate a _distribution_ of values that the missing value could take. Research via simulation studies indicates that this method gives more appropriate standard errors than single imputation. 
 
 
-
-
 ## Previous Research
-Methods for imputation have been compared often in the literature. 
+Methods for imputation have been compared often in the literature. Often, differences have proven to be fairly  
 
 # Model
 
